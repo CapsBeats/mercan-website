@@ -1,0 +1,28 @@
+# Lädt die Website bei jeder Änderung auf GitHub (Branch main) per FTP zu Hostinger hoch.
+# Zugangsdaten liegen als Repository-Secrets: FTP_USERNAME, FTP_PASSWORD.
+# Manuell starten: GitHub → Actions → "Website zu Hostinger hochladen" → Run workflow.
+name: Website zu Hostinger hochladen
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Per FTP zu Hostinger hochladen
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: 46.202.158.178
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          server-dir: public_html/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            .github/**
