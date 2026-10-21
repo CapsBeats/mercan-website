@@ -1,0 +1,571 @@
+{
+  "menu": [
+    {
+      "cat": "Gemüse Kebab",
+      "note": "Unser Signature – Hähnchen mit Grillgemüse",
+      "img": "images/menu/gemuese-teller.png",
+      "items": [
+        {
+          "name": "Mercan Gemüse Döner",
+          "desc": "Fleisch, Gemüsesalat & Soße",
+          "price": "6,00",
+          "veggie": false,
+          "img": ""
+        },
+        {
+          "name": "Mercan Big Gemüse Döner",
+          "desc": "Fleisch, Gemüsesalat & Soße",
+          "price": "7,50",
+          "veggie": false,
+          "img": ""
+        },
+        {
+          "name": "Mercan Gemüse Wrap",
+          "desc": "Fleisch, Gemüsesalat & Soße",
+          "price": "7,50",
+          "veggie": false,
+          "img": ""
+        },
+        {
+          "name": "Mercan Gemüse Bowl",
+          "desc": "Mit Bowlsalat & Pommes",
+          "price": "7,50",
+          "veggie": false,
+          "img": "images/menu/gemuese-bowl.png"
+        },
+        {
+          "name": "Mercan Gemüse Box Klein",
+          "desc": "Fleisch mit Pommes oder Salat",
+          "price": "6,50",
+          "veggie": false,
+          "img": "images/menu/gemuese-box.png"
+        },
+        {
+          "name": "Mercan Gemüse Box Groß",
+          "desc": "Fleisch mit Pommes oder Salat",
+          "price": "7,50",
+          "veggie": false,
+          "img": "images/menu/gemuese-box.png"
+        },
+        {
+          "name": "Mercan Gemüse Teller Groß",
+          "desc": "Mit Gemüsesalat, Pommes oder Reis",
+          "price": "12,00",
+          "veggie": false,
+          "img": "images/menu/gemuese-teller.png"
+        }
+      ]
+    },
+    {
+      "cat": "Menüs",
+      "note": "Inkl. Pommes & Getränk (0,2 l)",
+      "img": "images/menu/wrap-menue.png",
+      "items": [
+        {
+          "name": "Mercan Gemüse Döner Menü",
+          "desc": "",
+          "price": "10,50",
+          "veggie": false,
+          "img": ""
+        },
+        {
+          "name": "Mercan Gemüse Wrap Menü",
+          "desc": "",
+          "price": "11,50",
+          "veggie": false,
+          "img": ""
+        },
+        {
+          "name": "Schnitzel im Brot Menü",
+          "desc": "",
+          "price": "10,50",
+          "veggie": false,
+          "img": ""
+        },
+        {
+          "name": "Hamburger Menü",
+          "desc": "",
+          "price": "10,50",
+          "veggie": false,
+          "img": ""
+        },
+        {
+          "name": "Halloumi im Brot Menü",
+          "desc": "",
+          "price": "10,50",
+          "veggie": true,
+          "img": ""
+        },
+        {
+          "name": "Falafel im Brot Menü",
+          "desc": "",
+          "price": "10,50",
+          "veggie": true,
+          "img": ""
+        },
+        {
+          "name": "Seitan Döner im Brot Menü",
+          "desc": "",
+          "price": "10,50",
+          "veggie": true,
+          "img": ""
+        }
+      ]
+    },
+    {
+      "cat": "Vegetarisch",
+      "note": "Halloumi, Falafel, Seitan & Grillgemüse",
+      "img": "images/menu/halloumi-bowl.png",
+      "items": [
+        {
+          "name": "Vegetarisch Döner",
+          "desc": "Gemüsesalat & Soße",
+          "price": "6,00",
+          "veggie": true,
+          "img": ""
+        },
+        {
+          "name": "Grill Gemüse Döner",
+          "desc": "Gemüsesalat & Soße",
+          "price": "6,00",
+          "veggie": true,
+          "img": ""
+        },
+        {
+          "name": "Halloumi Döner",
+          "desc": "Gemüsesalat & Soße",
+          "price": "6,00",
+          "veggie": true,
+          "img": ""
+        },
+        {
+          "name": "Falafel Döner",
+          "desc": "Gemüsesalat & Soße",
+          "price": "6,00",
+          "veggie": true,
+          "img": ""
+        },
+        {
+          "name": "Seitan Döner",
+          "desc": "Gemüsesalat & Soße",
+          "price": "6,00",
+          "veggie": true,
+          "img": ""
+        },
+        {
+          "name": "Halloumi & Falafel Mix Döner",
+          "desc": "Gemüsesalat & Soße",
+          "price": "6,50",
+          "veggie": true,
+          "img": ""
+        },
+        {
+          "name": "Halloumi Wrap",
+          "desc": "Gemüsesalat & Soße",
+          "price": "7,50",
+          "veggie": true,
+          "img": ""
+        },
+        {
+          "name": "Falafel Wrap",
+          "desc": "Gemüsesalat & Soße",
+          "price": "7,50",
+          "veggie": true,
+          "img": ""
+        },
+        {
+          "name": "Seitan Wrap",
+          "desc": "Gemüsesalat & Soße",
+          "price": "7,50",
+          "veggie": true,
+          "img": ""
+        },
+        {
+          "name": "Halloumi & Falafel Mix Wrap",
+          "desc": "Gemüsesalat & Soße",
+          "price": "7,50",
+          "veggie": true,
+          "img": ""
+        },
+        {
+          "name": "Halloumi Bowl",
+          "desc": "Mit Bowlsalat & Pommes",
+          "price": "7,50",
+          "veggie": true,
+          "img": "images/menu/halloumi-bowl.png"
+        },
+        {
+          "name": "Falafel Bowl",
+          "desc": "Mit Bowlsalat & Pommes",
+          "price": "7,50",
+          "veggie": true,
+          "img": ""
+        },
+        {
+          "name": "Seitan Bowl",
+          "desc": "Mit Gemüsesalat, Pommes oder Reis",
+          "price": "7,50",
+          "veggie": true,
+          "img": "images/menu/seitan-bowl.png"
+        },
+        {
+          "name": "Halloumi & Falafel Mix Bowl",
+          "desc": "Mit Bowlsalat & Pommes",
+          "price": "7,50",
+          "veggie": true,
+          "img": ""
+        },
+        {
+          "name": "Seitan Box",
+          "desc": "Pommes oder Salat",
+          "price": "6,50",
+          "veggie": true,
+          "img": ""
+        },
+        {
+          "name": "Halloumi Teller",
+          "desc": "Mit Gemüsesalat & Soße",
+          "price": "11,00",
+          "veggie": true,
+          "img": ""
+        },
+        {
+          "name": "Falafel Teller",
+          "desc": "Mit Gemüsesalat, Pommes oder Reis",
+          "price": "11,00",
+          "veggie": true,
+          "img": ""
+        },
+        {
+          "name": "Halloumi & Falafel Mix Teller",
+          "desc": "Mit Gemüsesalat, Pommes oder Reis",
+          "price": "12,00",
+          "veggie": true,
+          "img": ""
+        }
+      ]
+    },
+    {
+      "cat": "Salat Bowls",
+      "note": "",
+      "img": "images/menu/falafel-salat-bowl.png",
+      "items": [
+        {
+          "name": "Salat Bowl",
+          "desc": "",
+          "price": "6,50",
+          "veggie": true,
+          "img": ""
+        },
+        {
+          "name": "Salat Bowl mit Käse",
+          "desc": "",
+          "price": "7,00",
+          "veggie": true,
+          "img": ""
+        },
+        {
+          "name": "Salat Bowl mit Halloumi",
+          "desc": "",
+          "price": "7,50",
+          "veggie": true,
+          "img": "images/menu/halloumi-salat-bowl.png"
+        },
+        {
+          "name": "Salat Bowl mit Falafel",
+          "desc": "",
+          "price": "7,50",
+          "veggie": true,
+          "img": "images/menu/falafel-salat-bowl.png"
+        },
+        {
+          "name": "Salat Bowl mit Chickenfleisch",
+          "desc": "",
+          "price": "7,50",
+          "veggie": false,
+          "img": ""
+        }
+      ]
+    },
+    {
+      "cat": "Grill",
+      "note": "",
+      "img": "images/menu/koefte-im-brot.png",
+      "items": [
+        {
+          "name": "Schnitzel im Brot",
+          "desc": "Schnitzel, Gemüsesalat & Soße",
+          "price": "6,00",
+          "veggie": false,
+          "img": ""
+        },
+        {
+          "name": "Hähnchenbrust Wrap",
+          "desc": "Gemüsesalat & Soße",
+          "price": "7,00",
+          "veggie": false,
+          "img": ""
+        },
+        {
+          "name": "Hähnchenspieß Wrap",
+          "desc": "Gemüsesalat & Soße",
+          "price": "7,00",
+          "veggie": false,
+          "img": ""
+        },
+        {
+          "name": "Hähnchenspieß Teller",
+          "desc": "Mit Gemüsesalat, Pommes oder Reis",
+          "price": "12,00",
+          "veggie": false,
+          "img": ""
+        },
+        {
+          "name": "Hähnchenbrust Teller",
+          "desc": "Mit Gemüsesalat, Pommes oder Reis",
+          "price": "12,00",
+          "veggie": false,
+          "img": ""
+        },
+        {
+          "name": "Köfte Teller",
+          "desc": "Mit Gemüsesalat, Pommes oder Reis",
+          "price": "13,00",
+          "veggie": false,
+          "img": ""
+        }
+      ]
+    },
+    {
+      "cat": "Türkische Pizza",
+      "note": "",
+      "img": "",
+      "items": [
+        {
+          "name": "Türkische Pizza",
+          "desc": "Pur",
+          "price": "2,50",
+          "veggie": true,
+          "img": ""
+        },
+        {
+          "name": "Türkische Pizza mit Salat",
+          "desc": "Gemüsesalat & Soße",
+          "price": "5,00",
+          "veggie": true,
+          "img": ""
+        },
+        {
+          "name": "Türkische Pizza mit Chicken",
+          "desc": "Chickenfleisch, Gemüsesalat & Soße",
+          "price": "7,50",
+          "veggie": false,
+          "img": ""
+        }
+      ]
+    },
+    {
+      "cat": "Burger",
+      "note": "",
+      "img": "images/menu/crispy-chicken-burger.png",
+      "items": [
+        {
+          "name": "Hamburger",
+          "desc": "",
+          "price": "5,80",
+          "veggie": false,
+          "img": ""
+        },
+        {
+          "name": "Cheeseburger",
+          "desc": "",
+          "price": "6,00",
+          "veggie": false,
+          "img": ""
+        },
+        {
+          "name": "Chili Burger",
+          "desc": "",
+          "price": "6,00",
+          "veggie": false,
+          "img": ""
+        },
+        {
+          "name": "Crispy Chicken Burger",
+          "desc": "",
+          "price": "6,00",
+          "veggie": false,
+          "img": "images/menu/crispy-chicken-burger.png"
+        },
+        {
+          "name": "Smash Burger",
+          "desc": "",
+          "price": "7,00",
+          "veggie": false,
+          "img": ""
+        },
+        {
+          "name": "Doppel Cheeseburger",
+          "desc": "",
+          "price": "8,00",
+          "veggie": false,
+          "img": ""
+        },
+        {
+          "name": "Falafel Burger",
+          "desc": "",
+          "price": "6,00",
+          "veggie": true,
+          "img": ""
+        },
+        {
+          "name": "Halloumi Burger",
+          "desc": "",
+          "price": "6,00",
+          "veggie": true,
+          "img": "images/menu/halloumi-burger-menue.png"
+        }
+      ]
+    },
+    {
+      "cat": "Fingerfood",
+      "note": "",
+      "img": "images/menu/currywurst-pommes.png",
+      "items": [
+        {
+          "name": "Pommes Klein / Groß",
+          "desc": "",
+          "price": "3,50 / 5,00",
+          "veggie": true,
+          "img": ""
+        },
+        {
+          "name": "Süßkartoffel Klein / Groß",
+          "desc": "",
+          "price": "4,00 / 5,00",
+          "veggie": true,
+          "img": ""
+        },
+        {
+          "name": "Potato Wedges Klein / Groß",
+          "desc": "",
+          "price": "4,00 / 5,00",
+          "veggie": true,
+          "img": "images/menu/potato-wedges.png"
+        },
+        {
+          "name": "Nuggets 6 Stück",
+          "desc": "",
+          "price": "4,00",
+          "veggie": false,
+          "img": ""
+        },
+        {
+          "name": "Nuggets mit Pommes",
+          "desc": "",
+          "price": "7,00",
+          "veggie": false,
+          "img": ""
+        },
+        {
+          "name": "Chicken Wings 6 Stück",
+          "desc": "",
+          "price": "5,00",
+          "veggie": false,
+          "img": ""
+        },
+        {
+          "name": "Chicken Wings Teller",
+          "desc": "Mit Pommes",
+          "price": "8,00",
+          "veggie": false,
+          "img": ""
+        },
+        {
+          "name": "Currywurst",
+          "desc": "",
+          "price": "4,00",
+          "veggie": false,
+          "img": ""
+        },
+        {
+          "name": "Currywurst mit Pommes",
+          "desc": "",
+          "price": "7,00",
+          "veggie": false,
+          "img": "images/menu/currywurst-pommes.png"
+        },
+        {
+          "name": "Bratwurst",
+          "desc": "",
+          "price": "4,00",
+          "veggie": false,
+          "img": ""
+        },
+        {
+          "name": "Bratwurst mit Pommes",
+          "desc": "",
+          "price": "7,00",
+          "veggie": false,
+          "img": ""
+        }
+      ]
+    },
+    {
+      "cat": "Getränke",
+      "note": "Preise im Laden können abweichen",
+      "img": "",
+      "items": [
+        {
+          "name": "Ayran",
+          "desc": "Natur, Lemon, Kirsch oder Mango",
+          "price": "2,00",
+          "veggie": false,
+          "img": ""
+        },
+        {
+          "name": "Wasser still 0,5 l",
+          "desc": "",
+          "price": "2,50",
+          "veggie": false,
+          "img": ""
+        },
+        {
+          "name": "Coca-Cola, Zero, Fanta, Sprite 0,2 l",
+          "desc": "",
+          "price": "2,20",
+          "veggie": false,
+          "img": ""
+        },
+        {
+          "name": "Coca-Cola, Zero, Fanta, Sprite 0,33 l",
+          "desc": "Auch Fanta Mango & Exotic",
+          "price": "2,80",
+          "veggie": false,
+          "img": ""
+        },
+        {
+          "name": "Coca-Cola, Zero, Light, Fanta, Sprite 0,5 l",
+          "desc": "",
+          "price": "3,30",
+          "veggie": false,
+          "img": ""
+        },
+        {
+          "name": "Coca-Cola, Fanta, Sprite 1 l",
+          "desc": "",
+          "price": "4,50",
+          "veggie": false,
+          "img": ""
+        },
+        {
+          "name": "Uludağ Gazoz 0,33 l / 0,5 l",
+          "desc": "",
+          "price": "2,80 / 3,30",
+          "veggie": false,
+          "img": ""
+        }
+      ]
+    }
+  ]
+}

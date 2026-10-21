@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Impressum | MERCAN Gemüse Döner Potsdam</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="nav is-scrolled">
+  <div class="nav__inner">
+    <a href="index.html" class="logo"><img class="logo__img" src="images/logo.jpg" alt="" width="52" height="52"><span class="logo__text"><span class="logo__word">MERCAN</span><span class="logo__sub">Gemüse Döner</span></span></a>
+    <a href="index.html" class="btn btn--ghost btn--sm">← Zurück</a>
+  </div>
+</header>
+<main class="container legal">
+  <!-- Vorlage – Angaben werden aus js/data.js (SITE.legal) eingesetzt. Kein Ersatz für eine Rechtsberatung. -->
+  <h1>Impressum</h1>
+
+  <h2>Angaben gemäß § 5 DDG</h2>
+  <p>
+    <span data-legal="businessName"></span><br>
+    Inhaber: <span data-legal="owner" data-label="Vor- und Nachname des Inhabers"></span><br>
+    Rechtsform: <span data-legal="legalForm" data-label="Rechtsform, z. B. Einzelunternehmen"></span><br>
+    <span data-legal="street"></span><br>
+    <span data-legal="city"></span>
+  </p>
+
+  <div data-optional>
+    <h2>Vertreten durch</h2>
+    <p>Geschäftsführung: <span data-legal="representative" data-label="Geschäftsführer:in (nur GmbH/UG, sonst „-“)"></span></p>
+  </div>
+
+  <h2>Kontakt</h2>
+  <p>
+    Telefon: <span data-legal="phone"></span><br>
+    E-Mail: <span data-legal="email" data-label="E-Mail-Adresse (Pflicht)"></span>
+  </p>
+
+  <div data-optional>
+    <h2>Registereintrag</h2>
+    <p><span data-legal="register" data-label="Registergericht und Registernummer (sonst „-“)"></span></p>
+  </div>
+
+  <div data-optional>
+    <h2>Umsatzsteuer-ID</h2>
+    <p>Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz:<br>
+      <span data-legal="vatId" data-label="USt-IdNr. (falls keine vorhanden: „-“)"></span></p>
+  </div>
+
+  <h2>Verbraucherstreitbeilegung</h2>
+  <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+
+  <h2>Online-Bestellungen</h2>
+  <p>Bestellungen zur Lieferung erfolgen über die externen Plattformen Lieferando und Wolt. Dafür gelten die Bedingungen des jeweiligen Anbieters.</p>
+
+  <div data-optional>
+    <h2>Bildnachweis</h2>
+    <p><span data-legal="photoCredit" data-label="Bildnachweis, z. B. „Fotos & Videos: MERCAN Gemüse Döner“"></span></p>
+  </div>
+
+  <p class="muted small">Stand: <span data-legal="updated"></span></p>
+</main>
+<footer class="footer">
+  <div class="container footer__inner">
+    <a href="index.html" class="logo__word">MERCAN</a>
+    <nav class="footer__links">
+      <a href="index.html">Startseite</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <button type="button" class="js-consent-open">Cookie-Einstellungen</button>
+    </nav>
+  </div>
+</footer>
+<script src="js/data.js"></script>
+<script src="js/legal.js"></script>
+<script src="js/consent.js"></script>
+</body>
+</html>

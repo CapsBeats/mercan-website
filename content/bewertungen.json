@@ -1,0 +1,33 @@
+{
+  "rating": {
+    "score": 4.8,
+    "count": 155,
+    "asOf": "Oktober 2026"
+  },
+  "reviews": [
+    {
+      "name": "Jan S.",
+      "stars": 5,
+      "when": "ca. Mai 2026",
+      "text": "Der Gemüsedöner […] war makellos, einfach hervorragend, die Angestellten freundlich und das Ambiente bei gutem Wetter kaum zu überbieten! Preislich absolut unschlagbar!"
+    },
+    {
+      "name": "Pascal T.",
+      "stars": 5,
+      "when": "ca. Juni 2026",
+      "text": "Absolut top! Der Döner war prall gefüllt mit saftigem Hähnchenfleisch, frischem Gemüse und einer leckeren Soße. Auch die Box-Variante hat überzeugt: viel Fleisch, gut gewürzt. Sauber, schnell, lecker. Klare Empfehlung!"
+    },
+    {
+      "name": "Mehmet K.",
+      "stars": 5,
+      "when": "ca. April 2026",
+      "text": "Ich habs zum ersten mal hier bei mercan Gemüse döner bruger probiert und es hat übertrieben geschmeckt ich finds auf jeden Fall ist beste essen hier in Potsdam und ihr musst es wirklich einmal im Leben probieren"
+    },
+    {
+      "name": "DogLoves C.",
+      "stars": 4,
+      "when": "ca. Juni 2026",
+      "text": "[…] die Location schonmal direkt sehr einladend gewirkt hat. Alles war modern und sauber und es gab einige Tische und Stühle, sodass man gut am Bassinplatz sitzen konnte. […] Das Fladenbrot war extrem lecker […] außen schön kross und innen fluffig. Auch der Salat erschien mir sehr frisch und knackig."
+    }
+  ]
+}

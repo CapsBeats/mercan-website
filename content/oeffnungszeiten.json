@@ -1,0 +1,39 @@
+{
+  "hours": [
+    {
+      "day": "Sonntag",
+      "open": "10:00",
+      "close": "23:00"
+    },
+    {
+      "day": "Montag",
+      "open": "10:00",
+      "close": "23:00"
+    },
+    {
+      "day": "Dienstag",
+      "open": "10:00",
+      "close": "23:00"
+    },
+    {
+      "day": "Mittwoch",
+      "open": "10:00",
+      "close": "23:00"
+    },
+    {
+      "day": "Donnerstag",
+      "open": "10:00",
+      "close": "23:00"
+    },
+    {
+      "day": "Freitag",
+      "open": "10:00",
+      "close": "24:00"
+    },
+    {
+      "day": "Samstag",
+      "open": "10:00",
+      "close": "24:00"
+    }
+  ]
+}

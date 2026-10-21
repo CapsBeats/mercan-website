@@ -1,0 +1,169 @@
+# Admin-Bereich (Decap CMS) – erreichbar unter <Website-Adresse>/admin/
+# Anmeldung mit GitHub; jede Änderung wird im GitHub-Repository gespeichert
+# und Netlify stellt die Website danach automatisch neu online (ca. 1 Minute).
+backend:
+  name: github
+  repo: GITHUB-NUTZERNAME/mercan-website # TODO: GitHub-Benutzername des Inhabers / Repository-Name
+  branch: main
+  site_domain: mercan-gemuese-doener.de # Website-Adresse (Anmeldung über Netlify-OAuth – bei Hostinger noch nicht eingerichtet)
+
+locale: de
+site_url: https://mercan-gemuese-doener.de
+display_url: https://mercan-gemuese-doener.de
+logo_url: /images/logo.jpg
+
+media_folder: images
+public_folder: images
+
+collections:
+  - name: inhalte
+    label: Website-Inhalte
+    editor: { preview: false }
+    files:
+      # ---------------------------------------------------------
+      - name: speisekarte
+        label: Speisekarte & Preise
+        file: content/speisekarte.json
+        fields:
+          - label: Kategorien
+            name: menu
+            widget: list
+            summary: "{{fields.cat}}"
+            fields:
+              - { label: Kategorie, name: cat, widget: string }
+              - { label: Hinweis unter der Überschrift, name: note, widget: string, required: false }
+              - { label: Bild der Kategorie, name: img, widget: image, required: false, hint: "Optional. Am schönsten freigestellt als PNG mit transparentem Hintergrund (vorhandene Bilder: images/menu/)." }
+              - label: Gerichte
+                name: items
+                widget: list
+                summary: "{{fields.name}} – {{fields.price}} €"
+                fields:
+                  - { label: Name, name: name, widget: string }
+                  - { label: Beschreibung, name: desc, widget: string, required: false }
+                  - { label: Preis, name: price, widget: string, hint: "Ohne €-Zeichen, z. B. 6,50 oder 3,50 / 5,00" }
+                  - { label: Vegetarisch (V), name: veggie, widget: boolean, default: false, required: false }
+                  - { label: Kleines Bild, name: img, widget: image, required: false, hint: "Optional – nur bei einzelnen Gerichten, freigestellt als PNG." }
+
+      # ---------------------------------------------------------
+      - name: oeffnungszeiten
+        label: Öffnungszeiten
+        file: content/oeffnungszeiten.json
+        fields:
+          - label: Wochentage
+            name: hours
+            widget: list
+            allow_add: false
+            allow_remove: false
+            allow_reorder: false
+            summary: "{{fields.day}}: {{fields.open}} – {{fields.close}} Uhr"
+            hint: "Mitternacht als 24:00 eintragen."
+            fields:
+              - { label: Tag, name: day, widget: string }
+              - { label: Öffnet um, name: open, widget: string, pattern: ['^([01]\d|2[0-3]):[0-5]\d$', "Format HH:MM, z. B. 10:00"] }
+              - { label: Schließt um, name: close, widget: string, pattern: ['^(([01]\d|2[0-3]):[0-5]\d|24:00)$', "Format HH:MM, z. B. 23:00 (Mitternacht = 24:00)"] }
+
+      # ---------------------------------------------------------
+      - name: kontakt
+        label: Kontakt & Links
+        file: content/kontakt.json
+        fields:
+          - label: Kontakt
+            name: contact
+            widget: object
+            fields:
+              - { label: Straße, name: street, widget: string }
+              - { label: PLZ und Ort, name: city, widget: string }
+              - { label: Telefon, name: phone, widget: string, hint: "z. B. 0163 7973185" }
+              - { label: E-Mail, name: email, widget: string, required: false, hint: "Pflicht fürs Impressum. Leer = wird auf der Startseite ausgeblendet." }
+          - label: Bestellen
+            name: links
+            widget: object
+            fields:
+              - { label: Lieferando-Link, name: lieferando, widget: string }
+              - { label: Wolt-Link, name: wolt, widget: string }
+          - label: Social Media
+            name: social
+            widget: object
+            hint: "Komplette Profil-Links. Leer = Symbol wird ausgeblendet."
+            fields:
+              - { label: Instagram, name: instagram, widget: string, required: false }
+              - { label: TikTok, name: tiktok, widget: string, required: false }
+              - { label: Facebook, name: facebook, widget: string, required: false }
+
+      # ---------------------------------------------------------
+      - name: startseite
+        label: Startseite (Highlights, Läden, Galerie)
+        file: content/startseite.json
+        fields:
+          - label: Highlights
+            name: highlights
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Titel, name: title, widget: string }
+              - { label: Text, name: text, widget: text }
+              - { label: Preis, name: price, widget: string, hint: "Mit €-Zeichen, z. B. 7,50 € oder ab 6,50 €" }
+              - { label: Bild, name: img, widget: image }
+              - { label: Bildausschnitt, name: pos, widget: string, required: false, hint: "Optional, z. B. center 75% (verschiebt den sichtbaren Teil nach unten)" }
+              - { label: Vegetarisch (V), name: veggie, widget: boolean, default: false, required: false }
+          - label: Auch von uns (weitere Läden)
+            name: shops
+            widget: list
+            summary: "{{fields.name}}"
+            hint: "Tabakwaren hier nicht bewerben (Tabakwerbeverbot)."
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Text, name: text, widget: text }
+              - { label: Bild, name: img, widget: image }
+              - { label: Adresse, name: address, widget: string, required: false }
+              - { label: Link (Website/Instagram), name: link, widget: string, required: false }
+          - label: Galerie
+            name: gallery
+            widget: list
+            summary: "{{fields.alt}}"
+            fields:
+              - { label: Bild, name: src, widget: image }
+              - { label: Bildbeschreibung, name: alt, widget: string, hint: "Kurz beschreiben, was zu sehen ist (für Blinde und Google)." }
+
+      # ---------------------------------------------------------
+      - name: bewertungen
+        label: Google-Bewertungen
+        file: content/bewertungen.json
+        fields:
+          - label: Gesamtbewertung bei Google
+            name: rating
+            widget: object
+            fields:
+              - { label: Sterne, name: score, widget: number, value_type: float, min: 1, max: 5, step: 0.1 }
+              - { label: Anzahl Bewertungen, name: count, widget: number, value_type: int, min: 0 }
+              - { label: Stand, name: asOf, widget: string, hint: "Monat und Jahr, z. B. Oktober 2026" }
+          - label: Rezensionen
+            name: reviews
+            widget: list
+            summary: "{{fields.name}} ({{fields.stars}} ★)"
+            hint: "Nur echte Google-Rezensionen, Text wörtlich übernehmen. Kürzungen mit […] markieren, nichts umformulieren."
+            fields:
+              - { label: Name, name: name, widget: string, hint: "Vorname + erster Buchstabe, z. B. Jan S." }
+              - { label: Sterne, name: stars, widget: number, value_type: int, min: 1, max: 5 }
+              - { label: Zeitpunkt, name: when, widget: string, hint: "z. B. ca. Mai 2026" }
+              - { label: Text, name: text, widget: text }
+
+      # ---------------------------------------------------------
+      - name: rechtliches
+        label: Impressum & Datenschutz
+        file: content/rechtliches.json
+        fields:
+          - label: Rechtliche Angaben
+            name: legal
+            widget: object
+            hint: "Leer = erscheint als orange Platzhalter. „-“ = trifft nicht zu, Zeile wird ausgeblendet."
+            fields:
+              - { label: Inhaber (Vor- und Nachname bzw. Firmenname), name: owner, widget: string, required: false }
+              - { label: Rechtsform, name: legalForm, widget: string, required: false, hint: "z. B. Einzelunternehmen oder GmbH" }
+              - { label: Geschäftsführer:in, name: representative, widget: string, required: false, hint: "Nur bei GmbH/UG – sonst „-“" }
+              - { label: Handelsregister, name: register, widget: string, required: false, hint: "z. B. Amtsgericht Potsdam, HRB 12345 – sonst „-“" }
+              - { label: USt-IdNr., name: vatId, widget: string, required: false, hint: "z. B. DE123456789 – falls keine vorhanden: „-“" }
+              - { label: Hosting-Anbieter, name: hoster, widget: string }
+              - { label: Speicherdauer Server-Logfiles (Tage), name: logRetentionDays, widget: string, required: false }
+              - { label: Bildnachweis, name: photoCredit, widget: string, required: false, hint: "z. B. Fotos & Videos: MERCAN Gemüse Döner – sonst „-“" }
+              - { label: Stand der Rechtstexte, name: updated, widget: string }

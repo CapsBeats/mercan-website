@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MERCAN Gemüse Döner Potsdam | Döner am Bassinplatz</title>
+  <meta name="description" content="MERCAN Gemüse Döner am Bassinplatz in Potsdam: Hähnchen-Gemüse-Döner, Halloumi, Falafel, Seitan, Türkische Pizza & Burger. Täglich ab 10 Uhr geöffnet. 4,8 ★ bei Google.">
+  <link rel="canonical" href="https://mercan-gemuese-doener.de/">
+  <meta name="theme-color" content="#0d0d0d">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:site_name" content="MERCAN Gemüse Döner">
+  <meta property="og:url" content="https://mercan-gemuese-doener.de/">
+  <meta property="og:title" content="MERCAN Gemüse Döner Potsdam">
+  <meta property="og:description" content="Frischer Gemüse Döner am Bassinplatz – täglich ab 10 Uhr.">
+  <meta property="og:image" content="https://mercan-gemuese-doener.de/images/teller.jpg">
+  <meta property="og:image:alt" content="Mercan Gemüse Teller mit Hähnchen, Pommes und Salat">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Strukturierte Daten für Google (Öffnungszeiten werden per js/main.js aus content/oeffnungszeiten.json aktualisiert) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "MERCAN Gemüse Döner",
+  "url": "https://mercan-gemuese-doener.de/",
+  "image": "https://mercan-gemuese-doener.de/images/teller.jpg",
+  "telephone": "+49 163 7973185",
+  "priceRange": "€",
+  "servesCuisine": [
+    "Döner",
+    "Türkisch",
+    "Vegetarisch"
+  ],
+  "hasMenu": "https://mercan-gemuese-doener.de/#menue",
+  "acceptsReservations": false,
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Am Bassin 12a",
+    "postalCode": "14467",
+    "addressLocality": "Potsdam",
+    "addressCountry": "DE"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 52.4003628,
+    "longitude": 13.0595617
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "opens": "10:00",
+      "closes": "23:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "10:00",
+      "closes": "23:59"
+    }
+  ]
+}
+  </script>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="preload" as="image" href="videos/doener-schneiden.jpg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a href="#highlights" class="skip-link">Zum Inhalt springen</a>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="logo" aria-label="MERCAN Gemüse Döner – zur Startseite">
+      <img class="logo__img" src="images/logo.jpg" alt="" width="52" height="52">
+      <span class="logo__text">
+        <span class="logo__word">MERCAN</span>
+        <span class="logo__sub">Gemüse Döner</span>
+      </span>
+    </a>
+    <nav class="nav__links" id="navLinks" aria-label="Hauptnavigation">
+      <a href="#menue">Menü</a>
+      <a href="#ueber-uns">Über uns</a>
+      <a href="#bewertungen">Bewertungen</a>
+      <a href="#standort">Standort</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="#" class="btn btn--primary btn--sm js-order" target="_blank" rel="noopener">Jetzt bestellen</a>
+    </nav>
+    <div class="nav__social js-social" aria-label="Social Media"></div>
+    <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <video class="hero__bg js-bgvideo" muted loop playsinline autoplay preload="metadata" poster="videos/doener-schneiden.jpg" aria-hidden="true"><source src="videos/doener-schneiden.mp4" type="video/mp4"></video>
+    <div class="hero__shade"></div>
+    <div class="hero__content">
+      <span class="status js-status"><i></i><b>Öffnungszeiten werden geladen…</b></span>
+      <h1 class="hero__title">MERCAN</h1>
+      <p class="hero__script">Gemüse Döner</p>
+      <span class="hero__line"></span>
+      <p class="hero__claim">Potsdams Gemüse Döner – frisch am Bassinplatz</p>
+      <a href="#" class="hero__address js-route" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span><span class="js-street">Am Bassin 12a</span>, <span class="js-city">14467 Potsdam</span></span></a>
+      <div class="hero__shops">
+        <p class="hero__shops-label">Auch von uns</p>
+        <div class="minishops js-shops-mini"></div>
+      </div>
+      <div class="hero__cta">
+        <a href="#menue" class="btn btn--primary">Zum Menü</a>
+        <a href="#" class="btn btn--ghost js-order" target="_blank" rel="noopener">Online bestellen</a>
+      </div>
+    </div>
+    <a href="#highlights" class="scroll-hint" aria-label="Nach unten scrollen">Scrollen <span>↓</span></a>
+  </section>
+
+  <!-- ============ FAKTEN-BAND ============ -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span>Frisches Fladenbrot</span><span>★ 4,8 bei Google</span><span>Vegetarisch &amp; Vegan-Optionen</span><span>Terrasse am Bassinplatz</span><span>Täglich ab 10 Uhr</span><span>Kindermenü</span>
+      <span>Frisches Fladenbrot</span><span>★ 4,8 bei Google</span><span>Vegetarisch &amp; Vegan-Optionen</span><span>Terrasse am Bassinplatz</span><span>Täglich ab 10 Uhr</span><span>Kindermenü</span>
+    </div>
+  </div>
+
+  <!-- ============ HIGHLIGHTS ============ -->
+  <section class="section section--media" id="highlights">
+    <div class="media-bg" aria-hidden="true"><img src="images/salat-vitrine.jpg" alt="" loading="lazy"></div>
+    <div class="container">
+      <p class="eyebrow reveal">Beliebt bei unseren Gästen</p>
+      <h2 class="section__title reveal">Unsere Highlights</h2>
+      <div class="cards js-highlights"></div>
+    </div>
+  </section>
+
+  <!-- ============ MENÜ ============ -->
+  <section class="section section--media" id="menue">
+    <div class="media-bg" aria-hidden="true"><img src="images/theke-zutaten.jpg" alt="" loading="lazy"></div>
+    <div class="container">
+      <p class="eyebrow reveal">Speisekarte</p>
+      <h2 class="section__title reveal">Menü</h2>
+      <p class="section__lead reveal">Alles frisch zubereitet. <span class="veg-badge">V</span> = vegetarisch</p>
+      <div class="tabs js-tabs" role="tablist" aria-label="Menü-Kategorien"></div>
+      <div class="menu js-menu" role="tabpanel"></div>
+      <p class="menu__foot reveal">Preise in Euro inkl. MwSt. für Abholung und Verzehr im Laden. Bei Lieferung über Lieferando oder Wolt gelten die dort angegebenen Preise. Allergene &amp; Zusatzstoffe auf Nachfrage im Laden.</p>
+    </div>
+  </section>
+
+  <!-- ============ ÜBER UNS ============ -->
+  <section class="section" id="ueber-uns">
+    <div class="container about">
+      <div class="about__img reveal">
+        <img src="images/spiess.jpg" alt="Hähnchen-Dönerspieß" loading="lazy">
+        <img src="images/vitrine.jpg" alt="Frisches Gemüse in der Vitrine" loading="lazy" class="about__img-small">
+      </div>
+      <div class="about__text">
+        <p class="eyebrow reveal">Über uns</p>
+        <h2 class="section__title reveal">Döner darf frisch sein.</h2>
+        <!-- TODO: Text gern durch die echte Geschichte ersetzen -->
+        <div class="manifest reveal">
+          <p>Anfang 2026 haben wir am Bassinplatz neu eröffnet –<br>mitten im Herzen von Potsdam.</p>
+          <p>Unsere Idee ist einfach:<br>
+            <strong>Saftiges Hähnchen vom Spieß.</strong><br>
+            <strong>Gegrilltes Gemüse.</strong><br>
+            <strong>Knackiger Salat.</strong><br>
+            <strong>Krosses Fladenbrot.</strong></p>
+          <p>Dazu Halloumi, Falafel und Seitan für alle,<br>die es ohne Fleisch mögen.</p>
+          <p>Keine Abkürzungen. Faire Preise.<br>Und ein Platz in der Sonne.</p>
+          <p class="manifest__end">Mercan ist kein Imbiss für zwischendurch.<br><em>Mercan ist Potsdams Gemüse Döner.</em></p>
+        </div>
+        <ul class="facts reveal">
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2M7 2v20M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></svg>Täglich frisch</li>
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>Große Veggie-Auswahl</li>
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>Terrasse am Bassin</li>
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12h.01M15 12h.01M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"/><path d="M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1"/></svg>Kindermenü</li>
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 12h13a1 1 0 0 1 1 1 5 5 0 0 1-5 5h-.598a.5.5 0 0 0-.424.765l1.544 2.47a.5.5 0 0 1-.424.765H5.402a.5.5 0 0 1-.424-.765L7 18"/><path d="M8 18a5 5 0 0 1-5-5V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8"/></svg>WC verfügbar</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALERIE ============ -->
+  <section class="gallery js-gallery" aria-label="Bildergalerie"></section>
+
+  <!-- ============ BEWERTUNGEN ============ -->
+  <section class="section section--media" id="bewertungen">
+    <div class="media-bg" aria-hidden="true"><video class="js-bgvideo" muted loop playsinline preload="none" poster="videos/spiess.jpg"><source src="videos/spiess.mp4" type="video/mp4"></video></div>
+    <div class="container">
+      <p class="eyebrow reveal">Google-Rezensionen</p>
+      <h2 class="section__title reveal">Das sagen unsere Gäste</h2>
+      <div class="rating reveal">
+        <span class="rating__score js-score">4,8</span>
+        <div>
+          <div class="stars stars--lg" aria-hidden="true">★★★★★</div>
+          <p class="rating__count js-count">155 Bewertungen auf Google</p>
+        </div>
+      </div>
+      <div class="reviews reveal">
+        <button class="reviews__nav reviews__nav--prev" aria-label="Vorherige Bewertung">‹</button>
+        <div class="reviews__track js-reviews" aria-live="polite"></div>
+        <button class="reviews__nav reviews__nav--next" aria-label="Nächste Bewertung">›</button>
+      </div>
+      <div class="reviews__dots js-dots"></div>
+      <p class="reviews__note reveal">Wörtliche Auszüge aus öffentlichen Google-Rezensionen, Kürzungen sind mit […] gekennzeichnet.
+        Wir haben die Bewertungen nicht selbst auf Echtheit geprüft; nach eigenen Angaben sucht Google gezielt nach gefälschten Inhalten.
+        Gesamtbewertung: Stand <span class="js-rating-asof">Oktober 2026</span>.</p>
+      <div class="center center--btns reveal">
+        <a href="#" class="btn btn--ghost js-maps" target="_blank" rel="noopener">Alle Bewertungen auf Google</a>
+        <a href="#" class="btn btn--primary js-review" target="_blank" rel="noopener">Bewertung schreiben</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STANDORT & ÖFFNUNGSZEITEN ============ -->
+  <section class="section" id="standort">
+    <div class="container location">
+      <div class="location__info">
+        <p class="eyebrow reveal">Standort</p>
+        <h2 class="section__title reveal">Am Bassinplatz</h2>
+        <address class="reveal">
+          <strong class="js-street">Am Bassin 12a</strong><br>
+          <span class="js-city">14467 Potsdam</span><br>
+          <span class="muted">Zwischen Holländischem Viertel und Innenstadt</span>
+        </address>
+        <a href="#" class="btn btn--primary js-route reveal" target="_blank" rel="noopener">Route planen</a>
+
+        <h3 class="sub reveal">Öffnungszeiten</h3>
+        <table class="hours reveal js-hours"></table>
+      </div>
+      <div class="map reveal">
+        <div class="map__consent js-map-consent" style="background-image:url('images/salatbar.jpg')">
+          <div class="map__box">
+            <p><strong>Karte anzeigen</strong></p>
+            <p class="muted small">Beim Laden der Karte werden Daten an Google übertragen.</p>
+            <button class="btn btn--primary btn--sm js-map-load">Google Maps laden</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AUCH VON UNS ============ -->
+  <section class="section section--alt" id="auch-von-uns">
+    <div class="container">
+      <p class="eyebrow reveal">Auch von uns</p>
+      <h2 class="section__title reveal">Unsere anderen Läden</h2>
+      <div class="cards cards--two js-shops"></div>
+    </div>
+  </section>
+
+  <!-- ============ KONTAKT ============ -->
+  <section class="section section--media" id="kontakt">
+    <div class="media-bg" aria-hidden="true"><video class="js-bgvideo" muted loop playsinline preload="none" poster="videos/zubereitung.jpg"><source src="videos/zubereitung.mp4" type="video/mp4"></video></div>
+    <div class="container">
+      <p class="eyebrow reveal">Kontakt</p>
+      <h2 class="section__title reveal">Hunger? Wir sind da.</h2>
+      <div class="contact">
+        <a class="contact__card reveal js-tel" href="#">
+          <span class="contact__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+          <span class="contact__label">Anrufen &amp; abholen</span>
+          <span class="contact__value js-phone">0163 7973185</span>
+        </a>
+        <a class="contact__card reveal js-order" href="#" target="_blank" rel="noopener">
+          <span class="contact__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg></span>
+          <span class="contact__label">Lieferung</span>
+          <span class="contact__value">Lieferando</span>
+        </a>
+        <a class="contact__card reveal js-wolt" href="#" target="_blank" rel="noopener">
+          <span class="contact__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg></span>
+          <span class="contact__label">Lieferung</span>
+          <span class="contact__value">Wolt</span>
+        </a>
+        <a class="contact__card reveal js-mail" href="#">
+          <span class="contact__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span>
+          <span class="contact__label">E-Mail</span>
+          <span class="contact__value js-email"></span>
+        </a>
+      </div>
+      <div class="follow reveal">
+        <p class="eyebrow">Folge uns</p>
+        <div class="follow__icons js-social"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div>
+      <span class="logo__word">MERCAN</span>
+      <p class="muted small">Gemüse Döner · Am Bassin 12a · 14467 Potsdam</p>
+    </div>
+    <nav class="footer__links">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="#top">Nach oben ↑</a>
+      <button type="button" class="js-consent-open">Cookie-Einstellungen</button>
+    </nav>
+  </div>
+  <p class="footer__copy">© <span class="js-year">2026</span> MERCAN Gemüse Döner Potsdam</p>
+</footer>
+
+<a href="tel:+491637973185" class="fab js-tel" aria-label="Jetzt anrufen"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/consent.js"></script>
+</body>
+</html>

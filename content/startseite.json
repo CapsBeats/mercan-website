@@ -1,0 +1,70 @@
+{
+  "highlights": [
+    {
+      "title": "Big Gemüse Döner",
+      "text": "Hähnchen vom Spieß, Grillgemüse, frischer Salat & hausgemachte Soße.",
+      "price": "7,50 €",
+      "img": "images/doener.jpg",
+      "pos": "center 75%",
+      "veggie": false
+    },
+    {
+      "title": "Falafel Döner",
+      "text": "Knusprige Falafel im krossen Fladenbrot – vegetarisch & beliebt.",
+      "price": "6,00 €",
+      "img": "images/falafel.jpg",
+      "pos": "center 68%",
+      "veggie": true
+    },
+    {
+      "title": "Mercan Bowl",
+      "text": "Hähnchen vom Spieß mit frischem Bowlsalat & Pommes.",
+      "price": "7,50 €",
+      "img": "images/box-bowl.jpg",
+      "veggie": false,
+      "pos": ""
+    }
+  ],
+  "shops": [
+    {
+      "name": "Späti",
+      "text": "Getränke, Snacks und Süßigkeiten für unterwegs.",
+      "img": "images/spaeti.jpg",
+      "address": "",
+      "link": ""
+    },
+    {
+      "name": "Mina's Eiscafé",
+      "text": "Eis und Kaffee zum Genießen.",
+      "img": "images/eiscafe.jpg",
+      "address": "",
+      "link": ""
+    }
+  ],
+  "gallery": [
+    {
+      "src": "images/salatbar.jpg",
+      "alt": "Frische Salatbar"
+    },
+    {
+      "src": "images/box-bowl.jpg",
+      "alt": "Bowl mit Hähnchen und Käse"
+    },
+    {
+      "src": "images/sossen.jpg",
+      "alt": "Hausgemachte Soßen"
+    },
+    {
+      "src": "images/vitrine-tomaten.jpg",
+      "alt": "Frische Tomaten und Salat in der Vitrine"
+    },
+    {
+      "src": "images/auslage.jpg",
+      "alt": "Gemüse-Auslage"
+    },
+    {
+      "src": "images/salat-vitrine.jpg",
+      "alt": "Salat-Vitrine mit Karotten und Rotkohl"
+    }
+  ]
+}
