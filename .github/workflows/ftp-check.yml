@@ -14,12 +14,8 @@ jobs:
           U: ${{ secrets.FTP_USERNAME }}
           P: ${{ secrets.FTP_PASSWORD }}
         run: |
-          for d in "" "public_html/" "domains/" "domains/mercan-gemuese-doener.de/" "domains/mercan-gemuese-doener.de/public_html/"; do
-            echo "=== /$d :: $(curl -s --list-only --user "$U:$P" "ftp://46.202.158.178/$d" | sort | tr '\n' ' ')"
+          for h in srv1812.hstgr.io 46.202.158.178; do
+            for d in "" "public_html/" "domains/mercan-gemuese-doener.de/public_html/"; do
+              echo "=== $h /$d :: $(curl -s -m 30 --list-only --user "$U:$P" "ftp://$h/$d" | sort | tr '\n' ' ')"
+            done
           done
-          echo "=== LIST -la public_html"
-          curl -s --user "$U:$P" "ftp://46.202.158.178/public_html/" | head -40
-          echo "=== LIST -la domains/mercan-gemuese-doener.de/public_html"
-          curl -s --user "$U:$P" "ftp://46.202.158.178/domains/mercan-gemuese-doener.de/public_html/" | head -40
-          echo "=== PWD"
-          curl -s -v --user "$U:$P" "ftp://46.202.158.178/" -o /dev/null 2>&1 | grep -E "257" || true
