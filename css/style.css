@@ -268,7 +268,7 @@ a.minishop:hover { border-color: var(--orange); transform: translateY(-2px); }
 .reviews__dots button::before { content: ""; width: 10px; height: 10px; border-radius: 6px; background: #555; transition: background .2s, width .25s; }
 .reviews__dots button.is-active::before { background: var(--orange); width: 26px; }
 
-.reviews__note { max-width: 720px; margin: 1.5rem auto 0; text-align: center; color: var(--muted); font-size: .8rem; line-height: 1.6; }
+.reviews__note { max-width: 720px; margin: 1.2rem auto 0; text-align: center; color: var(--muted); font-size: .7rem; line-height: 1.5; opacity: .7; }
 
 /* ---------- Location ---------- */
 .location { display: grid; grid-template-columns: 1fr 1.2fr; gap: clamp(2rem, 5vw, 5rem); align-items: start; }
