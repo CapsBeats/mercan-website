@@ -21,7 +21,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftp # ftps bricht bei Hostinger mit "ECONNRESET (data socket)" ab
-          server-dir: public_html/
+          server-dir: domains/mercan-gemuese-doener.de/public_html/
           exclude: |
             **/.git*
             **/.git*/**
