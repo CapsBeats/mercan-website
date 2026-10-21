@@ -20,7 +20,7 @@ jobs:
           server: 46.202.158.178
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps
+          protocol: ftp # ftps bricht bei Hostinger mit "ECONNRESET (data socket)" ab
           server-dir: public_html/
           exclude: |
             **/.git*
